@@ -3,6 +3,7 @@
 
 [![Travis](https://img.shields.io/travis/socialgorithm/ultimate-ttt-rust.svg)](https://travis-ci.org/socialgorithm/ultimate-ttt-rust)
 [![Coverage Status](https://coveralls.io/repos/github/socialgorithm/ultimate-ttt-rust/badge.svg?branch=master)](https://coveralls.io/github/socialgorithm/ultimate-ttt-rust?branch=master)
+[![Crate](https://img.shields.io/crates/v/ultimate-ttt.svg)](https://crates.io/crates/ultimate-ttt)
 
 This is a Rust implementation of the Ultimate Tic Tac Toe game.
 
