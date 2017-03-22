@@ -1,0 +1,6 @@
+[package]
+name = "ultimate-ttt"
+version = "0.1.0"
+authors = ["alex"]
+
+[dependencies]
