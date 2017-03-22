@@ -30,3 +30,5 @@ You can also run the tests in this repository by cloning it and running
 ```bash
 $ cargo test
 ```
+
+## [Code documentation](https://socialgorithm.org/ultimate-ttt-rust/ultimate_ttt/index.html)
