@@ -1,6 +1,10 @@
 [package]
 name = "ultimate-ttt"
 version = "0.1.0"
-authors = ["alex"]
+authors = ["Alejandro U. Alvarez"]
+repository = "https://github.com/socialgorithm/ultimate-ttt-rust.git"
+homepage = "https://github.com/socialgorithm/ultimate-ttt-rust"
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
