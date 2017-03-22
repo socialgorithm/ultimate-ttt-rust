@@ -6,5 +6,6 @@ repository = "https://github.com/socialgorithm/ultimate-ttt-rust.git"
 homepage = "https://github.com/socialgorithm/ultimate-ttt-rust"
 license = "MIT"
 readme = "README.md"
+description = "Ultimate Tic Tac Toe - Game engine"
 
 [dependencies]
