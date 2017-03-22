@@ -1,6 +1,9 @@
 # Ultimate TTT: Rust
 > Ultimate Tick Tack Toe implementation for algorithmic battles & hackathons :)
 
+[![Travis](https://img.shields.io/travis/socialgorithm/ultimate-ttt-rust.svg)](https://travis-ci.org/socialgorithm/ultimate-ttt-rust)
+[![Coverage Status](https://coveralls.io/repos/github/socialgorithm/ultimate-ttt-rust/badge.svg?branch=master)](https://coveralls.io/github/socialgorithm/ultimate-ttt-rust?branch=master)
+
 This is a Rust implementation of the Ultimate Tic Tac Toe game.
 
 What this package provides is all the required logic for the game, by exposing a simple API.
