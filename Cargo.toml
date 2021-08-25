@@ -1,7 +1,7 @@
 [package]
-name = "ultimate-ttt"
+name = "ultimate_ttt"
 version = "0.1.0"
-authors = ["Alejandro U. Alvarez"]
+authors = ["Alejandro U. Alvarez","Max Fisher"]
 repository = "https://github.com/socialgorithm/ultimate-ttt-rust.git"
 homepage = "https://github.com/socialgorithm/ultimate-ttt-rust"
 license = "MIT"
@@ -9,3 +9,4 @@ readme = "README.md"
 description = "Ultimate Tic Tac Toe - Game engine"
 
 [dependencies]
+rand = { version = "0.8.4", features = ["small_rng"] }
