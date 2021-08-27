@@ -29,7 +29,9 @@ fn main() {
                 let location = player.make_move();
                 write_move(location)
             }
-            "timeout" => {println!("Timeout")}
+            "timeout" => {
+                println!("Timeout")
+            }
             "game" => {}
             "match" => player.match_end(),
             _ => println!("Bad input"),

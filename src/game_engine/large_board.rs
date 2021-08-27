@@ -1,15 +1,15 @@
-use super::enums::{PlayerState, BoardState};
+use super::enums::{BoardState, PlayerState};
 use super::sub_board::SubBoard;
 use super::types::{Coord, Move};
 
 const SIZE: usize = 3;
 
-#[derive(Clone,Debug)]
+#[derive(Clone, Debug)]
 pub struct LargeBoard {
     board: [[SubBoard<PlayerState>; 3]; 3],
     previous_turns: Vec<Move>,
     state_board: SubBoard<BoardState>,
-    move_count:usize
+    move_count: usize,
 }
 
 impl LargeBoard {
@@ -18,7 +18,7 @@ impl LargeBoard {
             board: [[SubBoard::new(); 3]; 3],
             previous_turns: Vec::new(),
             state_board: SubBoard::new(),
-            move_count:0
+            move_count: 0,
         }
     }
 
@@ -28,7 +28,8 @@ impl LargeBoard {
         sub_board.make_move(player, location.sub_board);
 
         if sub_board.is_finished() {
-            self.state_board.make_move(sub_board.is_winner().unwrap(), location.large_board);
+            self.state_board
+                .make_move(sub_board.is_winner().unwrap(), location.large_board);
         }
 
         self.previous_turns.push(location);
@@ -72,7 +73,7 @@ impl LargeBoard {
 
     pub fn get_valid_moves(&self) -> Vec<Move> {
         if self.state_board.is_finished() {
-            return Vec::new()
+            return Vec::new();
         }
         self.get_valid_boards()
             .into_iter()

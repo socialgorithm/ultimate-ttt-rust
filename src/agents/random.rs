@@ -1,18 +1,17 @@
 use super::Agent;
-use rand::prelude::*;
 use crate::game_engine::{LargeBoard, Move, PlayerState};
+use rand::prelude::*;
 
 pub struct RandomAgent {
     game: LargeBoard,
-    rng:ThreadRng
+    rng: ThreadRng,
 }
-
 
 impl Agent for RandomAgent {
     fn new() -> Self {
         Self {
-            game:LargeBoard::new(),
-            rng:rand::thread_rng()
+            game: LargeBoard::new(),
+            rng: rand::thread_rng(),
         }
     }
 

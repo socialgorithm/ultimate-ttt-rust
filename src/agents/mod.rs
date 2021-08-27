@@ -10,7 +10,5 @@ pub trait Agent {
         self.make_move()
     }
     fn opponent_move(&mut self, location: Move);
-    fn match_end(&mut self) {
-
-    }
+    fn match_end(&mut self) {}
 }

@@ -8,15 +8,18 @@ const MOVE_LIMIT: usize = SIZE.pow(2);
 pub struct SubBoard<T> {
     board: [[T; 3]; 3],
     winner: Option<BoardState>,
-    move_count: usize
+    move_count: usize,
 }
 
-impl<T> SubBoard<T> where T:GameState {
+impl<T> SubBoard<T>
+where
+    T: GameState,
+{
     pub fn new() -> Self {
         Self {
             board: [[T::default(); 3]; 3],
             winner: None,
-            move_count: 0
+            move_count: 0,
         }
     }
 

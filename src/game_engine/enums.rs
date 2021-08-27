@@ -1,7 +1,7 @@
-pub trait GameState:Clone + Copy + PartialEq + Eq + Default {
-  fn hash_value(&self) -> usize;
-  fn allow_win(&self) -> bool;
-  fn to_board_state(&self) -> BoardState;
+pub trait GameState: Clone + Copy + PartialEq + Eq + Default {
+    fn hash_value(&self) -> usize;
+    fn allow_win(&self) -> bool;
+    fn to_board_state(&self) -> BoardState;
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
@@ -62,13 +62,11 @@ impl GameState for BoardState {
         match self {
             &BoardState::Undecided => false,
             &BoardState::Tie => false,
-            _ => true
+            _ => true,
         }
     }
 
     fn to_board_state(&self) -> BoardState {
         *self
     }
-    
 }
-
