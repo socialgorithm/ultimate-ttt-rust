@@ -9,26 +9,23 @@ This is a Rust implementation of the Ultimate Tic Tac Toe game.
 
 What this package provides is all the required logic for the game, by exposing a simple API.
 
-## Getting started
 
-Add it to your dependencies:
+## Getting Started
+1. Download Rust from https://www.rust-lang.org/
+2. Install nodejs from https://nodejs.org/en/
 
-```toml
-[dependencies]
+## Project Structure
+**game_engine** - This module contains the logic necessary for the ultimate tic-tac-toe to operate smoothly
+**agents** - This is where you will code your agent. Take a look at the RandomAgent provided for a good starting point. Once you have created your agent in the agents folder, make sure to switch it over in the [main.rs](./src/main.rs) file.
 
-ultimate-ttt="0.1.0"
-```
-
-Then build:
-
+## Running Your Agent
+1. First build the project making sure to use release mode:
 ```bash
-$ cargo build
+cargo build --release
 ```
-
-You can also run the tests in this repository by cloning it and running
-
-```bash
-$ cargo test
+2. Then to connect to the game server run:
+```
+npx @socialgorithm/uabc --host "SERVER_NAME" --lobby "LOBY_NAME" --token "TEAM_NAME" -f "target\release\ultimate_ttt.exe"
 ```
 
 ## [Code documentation](https://socialgorithm.org/ultimate-ttt-rust/ultimate_ttt/index.html)
