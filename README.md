@@ -13,13 +13,9 @@ What this package provides is all the required logic for the game, by exposing a
 ## Getting Started
 1. Download Rust from https://www.rust-lang.org/
 2. Install nodejs from https://nodejs.org/en/
-3. Install uabc as a global js dependency with:
-```bash
-npm i @socialgorithm/uabc -g
-```
 
 ## Project Structure
-**game_engine** - This module contains the logic necessary for the ultimate tic-tac-toe to opperate smoothly
+**game_engine** - This module contains the logic necessary for the ultimate tic-tac-toe to operate smoothly
 **agents** - This is where you will code your agent. Take a look at the RandomAgent provided for a good starting point. Once you have created your agent in the agents folder, make sure to switch it over in the [main.rs](./src/main.rs) file.
 
 ## Running Your Agent
@@ -29,7 +25,7 @@ cargo build --release
 ```
 2. Then to connect to the game server run:
 ```
-uabc --host "SERVER_NAME" --lobby "LOBY_NAME" --token "TEAM_NAME" -f "target\release\ultimate_ttt.exe"
+npx @socialgorithm/uabc --host "SERVER_NAME" --lobby "LOBY_NAME" --token "TEAM_NAME" -f "target\release\ultimate_ttt.exe"
 ```
 
 ## [Code documentation](https://socialgorithm.org/ultimate-ttt-rust/ultimate_ttt/index.html)
